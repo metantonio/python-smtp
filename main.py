@@ -20,18 +20,16 @@ email_receiver = 'destinatario@hotmail.com'
 # al crear un e-mail
 message = MIMEMultipart("alternative")
 # Asunto
-message["Subject"] = "[DataScientest] e-mail essai"
+message["Subject"] = "Asunto del E-mail"
 # el que envía
 message["From"] = email_address
 # el correo de quién recibe
 message["To"] = email_receiver
 
-# on crée un texte et sa version HTML
+# version HTML
 texte = '''
-Bonjour 
-Ma super newsletter
-Cdt
-mon_lien_incroyable
+Buenos días 
+
 '''
 
 html = '''
@@ -39,7 +37,7 @@ html = '''
 <body>
 <h1>Hola</h1>
 <p>Nueva Carta</p>
-<b>Cdt</b>
+<b>Saludos</b>
 <br>
 <a href="https://www.github.com/metantonio">Link a una página</a>
 </body>
